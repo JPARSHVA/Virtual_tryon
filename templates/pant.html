@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pants</title>
+</head>
+<body>
+	<h1>Virtual Tryon</h1>
+	<p>Please select a pant and Shirt:</p>
+	<form method="POST" action="{{ url_for('predict')}}">
+		<select name="pant">
+			<option value="1">Pant 1</option>
+			<option value="2">Pant 2</option>
+		</select>
+		<br>
+		<select name="shirt">
+			<option value="1">Shirt 1</option>
+			<option value="2">Shirt 2</option>
+			<option value="3">Shirt 3</option>
+			<option value="4">Shirt 4</option>
+		</select>
+		<input type="submit" value="Try it on">
+	</form>
+	<a href="/">Back to Home</a>
+</body>
+</html>
